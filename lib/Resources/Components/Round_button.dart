@@ -15,6 +15,7 @@ class Roundbutton extends StatelessWidget {
       required this.radius,
       this.width = 60,
       this.height = 60,
+      this.textSize = 16,
       this.loading = false});
 
   final bool loading;
@@ -22,6 +23,8 @@ class Roundbutton extends StatelessWidget {
   final double radius;
   final double height, width;
   final VoidCallback onpress;
+  final double textSize;
+
   final Color textcolor, buttoncolor;
 
   @override
@@ -41,7 +44,7 @@ class Roundbutton extends StatelessWidget {
                   style: Theme.of(context)
                       .textTheme
                       .titleMedium!
-                      .copyWith(color: textcolor),
+                      .copyWith(color: textcolor, fontSize: textSize),
                 ),
         ),
       ),

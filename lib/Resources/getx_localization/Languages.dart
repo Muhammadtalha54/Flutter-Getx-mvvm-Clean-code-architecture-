@@ -5,7 +5,7 @@ class Languages extends Translations {
   Map<String, Map<String, String>> get keys => {
         'en_US': {
           'mainbutton': "Navigate to next screen",
-          'ScreenTitle': "This is Login screen ",
+          'Logintitle': "This is Login screen ",
           'btn_text': "Login Here",
           'snackbar_title': "What is this",
           'snackbar,message': "This is flutter toasts",
@@ -16,7 +16,7 @@ class Languages extends Translations {
         },
         'ur_PK': {
           'mainbutton': "ہلاگ ان اسکرین ہے",
-          'ScreenTitle': "یہ لاگ ان اسکرین ہے۔ ",
+          'Logintitle': "یہ لاگ ان اسکرین ہے۔ ",
           'btn_text': "یہاں لاگ ان کریں۔",
           'snackbar_title': "یہ کیا ہے",
           'snackbar_message': "یہ فلٹر ٹوسٹس ہے۔",
@@ -27,7 +27,7 @@ class Languages extends Translations {
         },
         'ja_JP': {
           'mainbutton': "ہこちらはログイン画面です",
-          'ScreenTitle': "こちらはログイン画面です ",
+          'Logintitle': "こちらはログイン画面です ",
           'btn_text': "ここでログイン",
           'snackbar_title': "これは何ですか",
           'snackbar_message': "これはフラッタートーストです",
@@ -38,7 +38,7 @@ class Languages extends Translations {
         },
         'zh_CN': {
           'mainbutton': "ہی这是登录屏幕ے",
-          'ScreenTitle': "ی这是登录屏幕",
+          'Logintitle': "ی这是登录屏幕",
           'btn_text': "在此登录",
           'snackbar_title': "这是什么",
           'snackbar_message': "这是颤抖吐司",
@@ -49,7 +49,7 @@ class Languages extends Translations {
         },
         'hi_IN': {
           'mainbutton': "ہی这是登录屏幕ے",
-          'ScreenTitle': "یयह लॉगिन स्क्रीन है",
+          'Logintitle': "یयह लॉगिन स्क्रीन है",
           'btn_text': "यहां लॉगिन करें",
           'snackbar_title': "यह क्या है",
           'snackbar_message': "यह स्पंदन टोस्ट है",

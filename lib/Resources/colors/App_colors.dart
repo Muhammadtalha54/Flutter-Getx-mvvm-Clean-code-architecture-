@@ -6,4 +6,5 @@ class Appcolor {
   static const Color TextColor = Color.fromARGB(255, 0, 0, 0);
   static const Color tButtonColor = Color.fromARGB(255, 251, 105, 0);
   static const Color ExceptionIconColor = Color.fromARGB(255, 245, 0, 12);
+  static const Color backgroundcolor = Color.fromARGB(255, 238, 238, 238);
 }

@@ -4,7 +4,7 @@ import 'package:get/get_navigation/get_navigation.dart';
 
 import 'package:getx_mvvm/Resources/Routes/Routes.dart';
 import 'package:getx_mvvm/Resources/getx_localization/Languages.dart';
-import 'package:getx_mvvm/View/splashscreen.dart';
+import 'package:getx_mvvm/View/splashview/splashscreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,6 +30,7 @@ class MyApp extends StatelessWidget {
 
       home: const Splashscreen(),
       getPages: AppRoutes.routes(),
+      
     );
   }
 }

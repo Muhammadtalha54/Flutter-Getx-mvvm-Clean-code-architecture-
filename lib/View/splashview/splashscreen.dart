@@ -6,7 +6,10 @@ import 'package:getx_mvvm/Resources/Assets/images._assets.dart';
 import 'package:getx_mvvm/Resources/Components/Internet_exception_widget.dart';
 import 'package:getx_mvvm/Resources/Components/Round_button.dart';
 import 'package:getx_mvvm/Resources/colors/App_colors.dart';
-import 'package:getx_mvvm/View/Login_screen.dart';
+
+import 'package:getx_mvvm/View/Login/login_screen.dart';
+
+import '../../View_models/services/splashservices.dart';
 
 class Splashscreen extends StatefulWidget {
   const Splashscreen({super.key});
@@ -16,6 +19,18 @@ class Splashscreen extends StatefulWidget {
 }
 
 class _SplashscreenState extends State<Splashscreen> {
+//creating an instance for the splashservices to accesss it in the screen
+  SplashServices splashservices = SplashServices();
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    // using the function defined in splash services in the inistate method
+
+    splashservices.isLogin();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

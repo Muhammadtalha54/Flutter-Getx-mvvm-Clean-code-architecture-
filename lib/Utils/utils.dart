@@ -18,13 +18,6 @@ class Utils {
         textColor: Appcolor.TextColor);
   }
 
-  static bool isValidEmail(String email) {
-    // This regular expression checks for a basic email pattern.
-    // You can use a more sophisticated regex for stricter validation.
-    RegExp regex = RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$');
-    return regex.hasMatch(email);
-  }
-
   static snackbar(String title, String message) {
     Get.snackbar(title, message,
         backgroundColor: Appcolor.YellowColor,
