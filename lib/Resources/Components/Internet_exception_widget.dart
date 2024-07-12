@@ -6,7 +6,8 @@ import 'package:getx_mvvm/Resources/getx_localization/Languages.dart';
 import 'package:getx_mvvm/Resources/colors/App_colors.dart';
 
 class Internet_exception_widget extends StatefulWidget {
-  const Internet_exception_widget({super.key});
+  const Internet_exception_widget({super.key, required this.onpress});
+  final VoidCallback onpress;
 
   @override
   State<Internet_exception_widget> createState() =>

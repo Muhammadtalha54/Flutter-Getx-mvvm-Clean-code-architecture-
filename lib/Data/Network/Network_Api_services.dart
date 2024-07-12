@@ -34,7 +34,7 @@ class NetworkApiServices extends BaseApiAervices {
       //these exceptions are defined already in a seperate file
       throw InternetExceptions("No internet available");
     } on TimeoutException {
-      throw RequestTimeout("Timed out");
+       RequestTimeout("Timed out");
     }
 
     return responsejson;

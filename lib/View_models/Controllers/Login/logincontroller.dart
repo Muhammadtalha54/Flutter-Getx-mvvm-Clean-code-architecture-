@@ -48,13 +48,15 @@ class Login_view_model extends GetxController {
       if (value['error'] == 'user not found') {
         Utils.snackbar("title", "user not found");
       } else {
-   //setting data manually
-        UserModel usermodel=UserModel(islogin: true,
-        token: value['token']);
-
+        //setting data manually
+        UserModel usermodel = UserModel(islogin: true, token: value['token']);
 
         userprefrence.saveuser(usermodel).then((value) {
-          print(value);
+          // TODO: implement dispose
+          Get.delete<Login_view_model>();
+          Get.delete<suffixcontroller>();
+
+          //  print(value);
           if (RouteNames.Homescreen != null) {
             Get.toNamed(RouteNames.Homescreen);
           } else {

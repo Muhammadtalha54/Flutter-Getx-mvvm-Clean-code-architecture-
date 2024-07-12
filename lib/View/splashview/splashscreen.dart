@@ -64,7 +64,9 @@ class _SplashscreenState extends State<Splashscreen> {
             width: Get.width,
             decoration: BoxDecoration(
                 image: DecorationImage(image: AssetImage(ImageAssets.image1))),
-            child: Internet_exception_widget(),
+            child: Internet_exception_widget(onpress: () {
+              
+            },),
           ),
           Center(
               child: InkWell(
